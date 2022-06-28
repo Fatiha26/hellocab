@@ -14,6 +14,7 @@ error_reporting(0);
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Main Stylesheet File -->
@@ -79,8 +80,8 @@ error_reporting(0);
   </nav><!-- #nav-menu-container -->
 </div>
   </header><!-- #header -->
-        <div class="banner-b">
-          <div class="hero-banner">
+        <div class="banner-b" data-aos="fade-right"  data-aos-duration="1000">
+          <div class="hero-banner" data-aos="fade-right">
              <h1>FIND THE RIGHT CAR FOR YOU.</h1>
              <p>We have more than a thousand cars for you to choose.</p>
              <a href="about.php" class="btn-banner learn">Read More</a>
@@ -92,7 +93,7 @@ error_reporting(0);
             }?>
 
         </div>
-        <div class="img-b">
+        <div class="img-b" data-aos="fade-left"  data-aos-duration="2000">
           <img src="img/b1.png" alt="">
         </div>
           </div>
@@ -103,7 +104,7 @@ error_reporting(0);
    <main id="main">
       <section id="services">
         <div class="container">
-          <div class="section-header">
+          <div class="section-header" data-aos="zoom-in">
             <h2>Find the Best Car for you</h2>
             <p>We want you to move freely, make the most of your time, and be connected to the people and places that matter most to you.</p>
           </div>
@@ -146,12 +147,9 @@ error_reporting(0);
       </div>
     </section><!-- #services -->
 
-    <!--==========================
-      Clients Section
-      ============================-->
       <section id="clients" class="wow fadeInUp">
         <div class="container">
-          <div class="section-header">
+          <div class="section-header" data-aos="zoom-in">
             <h2>About Our Service</h2>
             <p>we are committed to safety, from the creation of new standards</p>
           </div>
@@ -192,30 +190,21 @@ error_reporting(0);
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!--Login-Form -->
     <?php include('includes/login.php');?>
-    <!--/Login-Form --> 
-
-    <!--Register-Form -->
     <?php include('includes/registration.php');?>
-
-    <!--/Register-Form --> 
-
-    <!--Forgot-password-Form -->
-    <?php include('includes/forgotpassword.php');?>
-    <!-- JavaScript  -->
+    
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
     <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
     <script src="lib/sticky/sticky.js"></script> 
     <script src="contact/jqBootstrapValidation.js"></script>
     <script src="contact/contact_me.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 
-
+    <script>
+  AOS.init();
+</script>
   </body>
   </html>

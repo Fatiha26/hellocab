@@ -15,9 +15,6 @@ error_reporting(0);
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet"> 
 </head>
 
@@ -27,12 +24,22 @@ error_reporting(0);
   <div class="inner-content">
     <h2>Car Listing</h2>
     <p>We provide high quality cars!</p>
-    <div> 
-    </div>
   </div> 
 </section>
 
 <main id="main">
+<div class="mt-5 ml-4">
+    <form class="form-inline "  action="search.php" method="post">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="text"  name="searchdata" placeholder="Search Car" aria-label="Search" required="true" style="background-color: #fff;border: 1px solid #000;">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" style="background-color: #49a3ff;" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 
       <section id="about" class="wow fadeInUp">
         <div class="container"> 
