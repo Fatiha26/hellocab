@@ -107,22 +107,16 @@ else{
               <div class="upload_user_logo"> 
                 <img src="admin/assets/img/bannerlogo.png" alt="image">
               </div>
-
-              <div class="dealer_info">
-                <h5><?php echo htmlentities($result->FullName);?></h5>
-                <p><?php echo htmlentities($result->Address);?><br>
-                  <?php echo htmlentities($result->City);?>
-                  &nbsp;<?php echo htmlentities($result->Country);
+                  <?php 
                 }
-              }?></p>
-            </div>
+              }?>
           </div>
           <div class="row">
             <div class="col-md-3 col-sm-3">
              <?php include('includes/sidebar.php');?>
 
              <div class="col-md-8 col-sm-8">
-              <div class="profile_wrap" style="margin-top: -80px;">
+              <div class="profile_wrap" style="margin-top: 10px;">
                 <h5 class="uppercase underline">My Bookings </h5>
                 <div class="my_vehicles_list">
                   <ul class="vehicle_listing">

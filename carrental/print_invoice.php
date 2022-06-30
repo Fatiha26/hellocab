@@ -41,23 +41,17 @@ else{
           <div class="container">
             <div class="user_profile_info">
               <div class="upload_user_logo"> 
-                <img src="admin/assets/img/bannerlogo.png" alt="image" width="100px">
+                <img src="admin/assets/img/bannerlogo.png" alt="image" width="130px">
               </div>
-
-              <div class="dealer_info">
-                <h5><?php echo htmlentities($result->FullName);?></h5>
-                <p><?php echo htmlentities($result->Address);?><br>
-                  <?php echo htmlentities($result->City);?>
-                  &nbsp;<?php echo htmlentities($result->Country);
+                  <?php
                 }
-              }?></p>
-            </div>
+              }?>
           </div>
           <div class="row">
             <div class="col-md-3 col-sm-3">
              <?php include('includes/sidebar.php');?>
 
-             <div class="col-md-8 col-sm-8" style="margin-top: -100px;">
+             <div class="col-md-8 col-sm-8" style="margin-top: 10px;">
               <div class="profile_wrap">
                 <h5 class="uppercase underline">My Bookings </h5>
                 <div class="my_vehicles_list" >
@@ -99,7 +93,7 @@ else{
                           </div>
                           <?php 
                         } else { ?>
-                         <div class="vehicle_status"> <a href="#" class="btn outline btn-xs">Not Confirm yet</a>
+                         <div class="vehicle_status"> <a href="#" class="btn outline btn-xs" style="color: #fff;">Not Confirm yet</a>
                           <div class="clearfix"></div>
                         </div>
                         <?php 
@@ -154,11 +148,7 @@ else{
 <script src="lib/jquery/jquery-migrate.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
 <script src="lib/wow/wow.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/magnific-popup/magnific-popup.min.js"></script>
 <script src="lib/sticky/sticky.js"></script> 
 <script src="contact/jqBootstrapValidation.js"></script>
 <script src="contact/contact_me.js"></script>
