@@ -183,7 +183,43 @@ h1, h2, h3, h4, h5, h6 {
 {
   color: #ddd;
 }
+@media (max-width: 775px){
+  #header #logo {
+    width: 40%;
 
+  }
+  #header #logo img {
+    margin-top: 10px;
+    width: 60%;
+  }
+  .banner-b
+ {
+  display: block;
+ }
+ .hero-banner
+{
+  width: 100%;
+  margin-top: -40px;
+}
+
+  .hero-banner h1
+{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+.hero-banner p
+{
+  font-size: 14px;
+}
+.back-to-top {  
+  right: 0;
+  bottom: 15px;
+  left: 0;
+}
+
+}
 @media (max-width: 450px){
   #header #logo {
     width: 40%;
@@ -222,9 +258,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-@media (max-width: 380px){
+@media (max-width: 320px){
   #header #logo {
-    width: 30%;
+    width: 40%;
 
   }
   #header #logo img {
@@ -246,19 +282,19 @@ h1, h2, h3, h4, h5, h6 {
 }
   .hero-banner h1
 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   margin-top: 20px;
 }
 .hero-banner p
 {
-  font-size: 12px;
+  font-size: 10px;
 }
 .btn-banner
 {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 12px;
 
 }
 
@@ -627,6 +663,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
   
 }
+@media (max-width: 320px) {
+  .section-header h2
+{
+  font-size: 16px;
+}
+.section-header p
+{
+  font-size: 12px;
+}
+  
+}
 
 #services {
   padding: 60px 0 0 0;
@@ -746,6 +793,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   color: #0d0d0d;
   text-align: justify;
+}
+@media (max-width:775px)
+{
+  #clients .row .a-services
+  {
+    width: 100%;
+  }
+  #clients .row .nmbr-one
+{
+  margin-left: 60px;
+  
+}
+  
 }
 @media (max-width:450px)
 {
@@ -1053,9 +1113,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     outline:none;
   }
 
-/*-----------------
-  1.5. Form
-  ---------------------------*/
 
   .form-group {
     margin-bottom: 15px;
@@ -1350,10 +1407,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
 
-
-/*-----------------------------
-  3.4. Recently-Listed-Cars
-  -----------------------------------*/
   .recent-tab {
     margin: 0 auto;
     text-align: center;
@@ -1458,9 +1511,44 @@ body.mobile-nav-active #mobile-nav-toggle {
     line-height: 22px;
   }
 
-/*----------------------
-  3.6. Featured-Cars
-  -------------------------------*/
+  @media (max-width: 320px) {
+   .car-info-box 
+   {
+    width: 100%;
+   }
+   .car-info-box ul {
+    padding: 0 8px;
+    position: relative;
+    width: 100%;
+  }
+  .car-info-box ul img {
+    width: 100%;
+  }
+  .car-info-box li {
+    font-size: 10px;
+    line-height: 30px;
+    margin: 0 8px 0 auto;
+  }
+  .car-title-m {
+    overflow: hidden;
+    padding: 10px;
+  }
+  .car-title-m h6 {
+    max-width: 280px;
+  }
+  .car-title-m .price {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .inventory_info_m {
+    padding: 8px;
+  }
+  .inventory_info_m p {
+    line-height: 10px;
+  
+   }
+  }
   .featured-car-list {
     background: #ffffff none repeat scroll 0 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

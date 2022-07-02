@@ -109,7 +109,8 @@ if(isset($_GET['del']))
                           <td><?php echo htmlentities($result->BrandName);?></td>
                           <td><?php  echo htmlentities(date("d-m-Y", strtotime($result->CreationDate)));?></td>
                           <td><?php  echo htmlentities(date("d-m-Y", strtotime($result->UpdationDate)));?></td>
-                          <td class=" text-center"><a href="#"  class=" edit_data4" id="<?php echo  ($result->id); ?>" title="click to edit"><i class="mdi mdi-pencil-box-outline" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                          <td class=" text-center">
+                            <a href="#"  class=" edit_data4" id="<?php echo  ($result->id); ?>" title="click to edit"><i class="mdi mdi-pencil-box-outline" aria-hidden="true"></i></a>&nbsp;&nbsp;
                             <a href="brand.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="mdi mdi-delete"></i></i></a></td>
 
                           </tr>

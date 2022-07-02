@@ -123,7 +123,7 @@ error_reporting(0);
               <div class="col-lg-4">
                 <div class="box wow  fadeInLeft">
                   <div class="car-info-box">
-                    <a href="car_details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" style="height: 180px; width: 280px; margin-left:20px;margin-bottom:8px;" class="img-responsive"  alt="image" >
+                    <a href="car_details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" style="height: 180px; width: 250px; margin-left:20px;margin-bottom:8px;" class="img-responsive"  alt="image" >
                     </a>
                     <ul style=" width: 100%; background-color: #60a3bc;">
                       <li style="font-size: 15px;"></><i class="fa fa-car" aria-hidden="true" style="font-size: 15px;"></i><?php echo htmlentities($result->FuelType);?></li>

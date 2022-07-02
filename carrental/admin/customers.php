@@ -11,6 +11,16 @@ if(isset($_GET['delid']))
   echo "<script>alert('User blocked');</script>"; 
   echo "<script>window.location.href = 'userregister.php'</script>";
 }
+if(isset($_GET['del']))
+{
+  $id=$_GET['del'];
+  $sql = "delete from tblusers  WHERE id=:id";
+  $query = $dbh->prepare($sql);
+  $query -> bindParam(':id',$id, PDO::PARAM_STR);
+  $query -> execute();
+  echo "<script>alert('user deleted.');</script>"; 
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +47,7 @@ if(isset($_GET['delid']))
                       <th>Email </th>
                       <th>Contact no</th>
                       <th>Reg Date</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -56,6 +67,9 @@ if(isset($_GET['delid']))
                         <td><?php echo htmlentities($result->EmailId);?></td>
                         <td><?php echo htmlentities($result->ContactNo);?></td>
                         <td><?php echo htmlentities($result->RegDate);?></td>
+                        <td>
+                          <a href="customers.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="mdi mdi-delete"></i></i></a></td>
+                        </td>
                       </tr>
                       <?php
                       $cnt=$cnt+1;
