@@ -36,13 +36,9 @@ if(isset($_REQUEST['aeid']))
 <?php @include("includes/head.php");?>
 <body>
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
     <?php @include("includes/header.php");?>
-    <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_sidebar.html -->
       <?php @include("includes/sidebar.php");?>
-      <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
@@ -55,6 +51,7 @@ if(isset($_REQUEST['aeid']))
                   <table class="table align-items-center table-flush table-hover table-bordered" id="">
                    <tbody>
                     <?php 
+                   
                     $bid=intval($_GET['bid']);
                     $sql = "SELECT tblusers.*,tblbrands.BrandName,tblvehicles.VehiclesTitle,tblbooking.FromDate,tblbooking.ToDate,tblbooking.message,tblbooking.VehicleId as vid,tblbooking.Status,tblbooking.PostingDate,tblbooking.id,tblbooking.BookingNumber,
                     DATEDIFF(tblbooking.ToDate,tblbooking.FromDate) as totalnodays,tblvehicles.PricePerDay
@@ -150,6 +147,7 @@ if(isset($_REQUEST['aeid']))
                 </table>
                 <div class="text-center" style="margin-top: 10px;">
               <a href="print_invoice_admin.php?bid=<?php echo htmlentities($result->id);?>" class="btn btn-success" style="width: 130px;">Print</a>
+             
             </div>
               </div>
              
@@ -157,18 +155,11 @@ if(isset($_REQUEST['aeid']))
           </div>
         </div>
       </div>
-      <!-- content-wrapper ends -->
-      <!-- partial:../../partials/_footer.html -->
       <?php @include("includes/footer.php");?>
-      <!-- partial -->
     </div>
-    <!-- main-panel ends -->
   </div>
-  <!-- page-body-wrapper ends -->
 </div>
-<!-- container-scroller -->
 <?php @include("includes/foot.php");?>
-<!-- End custom js for this page -->
 
 </body>
 </html>
